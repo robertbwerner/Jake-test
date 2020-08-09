@@ -128,6 +128,8 @@ h3 {
 /* header*/
 .logo{
 	max-width: 100px;
+	background-color: var(--clr-dark);
+	border-radius: 10px;
 }
 header{
 	display: flex;
@@ -350,12 +352,13 @@ nav{
 .portfolio{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1.5em;
 }
 .portfolio__item{
 	background: var(--clr-accent);
 	overflow: hidden;
-	height: 395px;
-	width:325px;
+	height: 415px;
+    width: 342px;
 }
 .portfolio__img{
 	transition: transform 750ms cubic-bezier(0.5,0,0.5,1),
@@ -378,8 +381,8 @@ nav{
 	text-align: center;
 	padding: 2.5em 0;
 	font-size: var(--fs-h3);
-
 }
+
 .footer a {
 	color:inherit;
 	text-decoration: none;
@@ -417,4 +420,12 @@ nav{
 max-width: 800px;
 margin-left: auto;
 margin-right: auto;
+}
+
+.red{
+	color: red;
+}
+.description{
+	font-size: var(--fs-h3);
+	text-align: center;
 }
